@@ -1,0 +1,69 @@
+<html>
+<head>
+	<link href="style.css" media="all" rel="stylesheet" />
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+   <script src="script.js"></script>
+   <script src="awesome.js"></script>
+   
+</head>
+   <body>
+      <div class="container">
+         <div class="edit-button">
+            <i class="fas fa-pencil-ruler"></i>
+         </div>
+         <div class="move-button">
+            <i class="far fa-arrows"></i>
+         </div>
+         <div class="place-button">
+            <i class="fas fa-box-open"></i>
+         </div>
+         <div class="back-button">
+            <i class="fas fa-hand-paper"></i>
+         </div>
+
+         <div class="tittle">Decorar Casa</div>
+
+         <i class="fas fa-bars" id = "move"></i>
+         <i class="fas fa-shopping-cart" id = "cart"></i>
+
+         <div class="control" >
+            <div class="text" style="top: 4.5vh; left: 3vh;">x</div>
+            <div class="text" style="top: 4.5vh; left: 13vh;">y</div>
+            <div class="text" style="top: 4.5vh; left: 23vh;">z</div>
+            <input type="text" value="0" class="draggable-input" style="left:2.7vh; top: 6.5vh;" id = "px" increment = 0.001 />
+            <input type="text" value="0" class="draggable-input" style="left:12.7vh; top: 6.5vh;" id = "py" increment = 0.001 />
+            <input type="text" value="0" class="draggable-input" style="left:22.7vh; top: 6.5vh;" id = "pz" increment = 0.001 />
+            
+            <div class="text" style="top: 9vh; left: 3vh;">rx</div>
+            <div class="text" style="top: 9vh; left: 13vh;">ry</div>
+            <div class="text" style="top: 9vh; left: 23vh;">rz</div>
+            <input type="text" value="0" class="draggable-input" style="left:2.7vh; top: 11vh;" id = "rx" increment = 0.1 />
+            <input type="text" value="0" class="draggable-input" style="left:12.7vh; top: 11vh;" id = "ry" increment = 0.1 />
+            <input type="text" value="0" class="draggable-input" style="left:22.7vh; top: 11vh;" id = "rz" increment = 0.1 />   
+
+            <div class="text" style="top: 4.5vh; right: 3.5vh;">Borrar</div>
+            <div class="trash"> 
+               <i class="fas fa-trash-alt" id = "trash-icon"></i>
+            </div>
+         </div>
+         
+         <div class="place">
+            <div class="select-list-cat">
+            </div>
+
+            <div class="select-list-it">
+
+            </div>
+               
+         </div>
+
+         <div class="buy-options">
+            <div class="b-button" typ = "buy" style="bottom: 3vh; left:38vh;">Comprar</div>
+            <div class="b-button" typ = "nobuy" style="bottom: 3vh; left:46vh;">Cancelar</div>
+            <div class="b-price"></div>
+         </div>
+         
+      </div>
+      
+   </body>
+</html>

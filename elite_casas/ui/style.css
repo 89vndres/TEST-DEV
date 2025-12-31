@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
+
+body {
+   font-family: 'Exo', sans-serif;
+   display: none;
+   user-select: none;
+   overflow: hidden;
+}
+
+input {
+transition: background-color ease 0.1s, color ease 0.1s ;
+  position: absolute;
+  width: 7vh;
+  height: 2vh;
+  padding: 1vh;
+  border-radius: 0.5vh;
+  background-color: rgba(14, 14, 14, 0.967);
+  color: rgb(161, 161, 161);
+  border: none;
+  cursor: n-resize;
+  user-select: none;
+}
+
+input:focus {
+   background-color: rgb(255, 255, 255);
+   color: rgba(0, 0, 0, 0.897);
+}
+
+.container {
+   transition: height ease 0.1s, width ease 0.1s;
+   position: absolute;
+   bottom: 2.777778vh;
+   width: 40vh;
+   height: 4.5vh;
+   left: 8vh;
+   background-color: rgba(12, 12, 12, 0.664);
+   border-radius: 0.5vh;
+   user-select: none;
+}
+
+.control {
+   transition: filter ease 0.1s;
+   display: none;
+   filter: blur(5px);
+}
+
+.edit-button{
+   position: absolute;
+   border-radius: 0.3vh;
+   top: 1vh;
+   left: 1vh;
+   padding: 0.5vh;
+   font-size: 1.5vh;
+   color: rgb(160, 160, 160);
+   background-color: rgba(17, 17, 17, 0.897);
+}
+
+
+
+.move-button{
+   position: absolute;
+   border-radius: 0.3vh;
+   top: 1vh;
+   left: 4vh;
+   padding: 0.4vh;
+   font-size: 1.75vh;
+   color: rgb(160, 160, 160);
+   background-color: rgba(17, 17, 17, 0.897);
+}
+
+
+
+.place-button{
+   position: absolute;
+   border-radius: 0.3vh;
+   top: 1vh;
+   left: 7vh;
+   padding: 0.5vh;
+   padding-left: 0.38vh;
+   padding-right: 0.38vh;
+   font-size: 1.5vh;
+   color: rgb(160, 160, 160);
+   background-color: rgba(17, 17, 17, 0.897);
+}
+
+.back-button{
+   opacity: 0.0;
+   position: absolute;
+   top: 1.4vh;
+   left: 10.5vh;
+   font-size: 1.7vh;
+   color: rgba(233, 233, 233, 0.678);
+}
+
+
+.tittle{
+   position: absolute;
+   transform: translateX(-50%);
+   top: 1.5vh;
+   left: 50%;
+   font-size: 1.3vh;
+   color: rgb(209, 209, 209);
+}
+
+.text{
+   position: absolute;
+   font-size: 1.3vh;
+   color: rgb(173, 173, 173);
+}
+
+.place {
+   display: none;
+}
+
+.select-list-cat {
+   position: absolute;
+   height: 13vh;
+   width: 15vh;
+   top: 5vh;
+   left: 3vh;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.select-list-it {
+   position: absolute;
+   height: 13vh;
+   width: 15vh;
+   top: 5vh;
+   left: 20vh;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+.select-item {
+   transition: color ease 0.1s, background-color ease 0.1s;
+   height: 2vh;
+   width: 100%;
+   padding-top: 0.3vh;
+   font-size: 1.3vh;
+   text-align: center;
+   border-radius: 0.5vh;
+   margin-bottom: 0.2vh;
+   border-bottom: 1px solid rgb(12, 12, 12);
+   background-color: rgba(14, 14, 14, 0.967);
+   color: rgb(209, 209, 209);
+}
+
+.select-item:hover{
+   background-color: rgba(255, 255, 255, 0.967);
+   color: rgb(0, 0, 0);
+}
+
+.trash {
+   position: absolute;
+   transition: color ease 0.1s, background-color ease 0.1s;
+   height: 5vh;
+   width: 5vh;
+   right: 3vh;
+   top: 7.2vh;
+   font-size: 2.5vh;
+   text-align: center;
+   border-radius: 0.5vh;
+   background-color: rgba(14, 14, 14, 0.967);
+   color: rgb(97, 97, 97);
+}
+
+#trash-icon {
+   position: absolute;
+   width: 100%;
+   top: 1.2vh;
+   left: 0;
+}
+
+.trash:hover{
+   background-color: rgba(255, 255, 255, 0.967);
+   color: rgb(0, 0, 0);
+}
+
+.select-list-it::-webkit-scrollbar-track,
+.select-list-cat::-webkit-scrollbar-track {
+   border: none;
+}
+
+.select-list-it::-webkit-scrollbar,
+.select-list-cat::-webkit-scrollbar {
+   width: 00.42vh;
+}
+.select-list-it::-webkit-scrollbar-thumb,
+.select-list-cat::-webkit-scrollbar-thumb {
+   background-color: rgba(235, 235, 235, 0.322);
+   border-radius: 1vh;
+}
+
+#move{
+   font-size: 1.5vh;
+   position: absolute;
+   top: 1.5vh;
+   right: 1.5vh;
+   color: rgba(255, 255, 255, 0.411);
+}
+
+#cart{
+   opacity: 0.0;
+   font-size: 1.5vh;
+   position: absolute;
+   top: 1.5vh;
+   right: 5vh;
+   color: rgba(255, 255, 255, 0.671);
+}
+
+.buy-options{
+   opacity: 0.0;
+}
+
+.b-separator {
+   position: absolute;
+   width: 0.2vh; 
+   left: 37vh; 
+   top: 5vh;
+   height: 12vh; 
+   border-radius: 1vh; 
+   background-color: rgba(250, 250, 250, 0.507);
+}
+
+.b-price {
+   position: absolute;
+   height: 2vh;
+   word-break: break-all;
+   width: 15vh;
+   top: 5vh; 
+   left:38vh;
+   font-size: 1.3vh;
+   text-align: left;
+   color: rgb(209, 209, 209);
+}
+
+.b-button {
+   position: absolute;
+   transition: color ease 0.1s, background-color ease 0.1s;
+   height: 2vh;
+   width: 7vh;
+   padding-top: 0.3vh;
+   border-radius: 0.5vh;
+   font-size: 1.2vh;
+   text-align: center;
+   background-color: rgba(14, 14, 14, 0.967);
+   color: rgb(209, 209, 209);
+}
+
+.b-button:hover{
+   background-color: rgba(255, 255, 255, 0.967);
+   color: rgb(0, 0, 0);
+}
